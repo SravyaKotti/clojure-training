@@ -1,6 +1,6 @@
-equalsIgnoreCase(String anotherString) {    
-       return (this == anotherString) ? true    
-               : (anotherString != null)    
-               && (anotherString.value.length == value.length)    
-               && regionMatches(true, 0, anotherString, 0, value.length);    
+equalsIgnoreCase(String secondString) {    
+       return (this == secondString) ? true    
+               : (secondString != null)    
+               && (secondString.value.length == value.length)    
+               && regionMatches(true, 0, secondString, 0, value.length);    
    }    
