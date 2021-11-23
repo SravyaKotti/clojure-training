@@ -1,0 +1,13 @@
+(defn under [verb, obverse, func x y]
+  (obverse (func (verb x) (verb y))))
+
+(defn sqrt [x]
+  (Math/sqrt x))
+
+(defn square [x]
+  (Math/pow x 2))
+
+(defn pythagoras [x y]
+  (under square sqrt + x y))
+
+(println (pythagoras 3 4))
